@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+<body>
+    <section>
+        <div class="login-page">
+            <div class="image-side">
+                <img src="./Images/login-Img.png" class="login-image" />
+            </div>
+            <div class="form-side">
+                <div class="form-inner-top-container">
+                    <h1 class="heading-1">Login</h1>
+                    <h1 class="heading-2">Authentication</h1>
+                    <p class="discription">A Web Development Task by <a class="discription-highlight" href="https://devtern.tech/" target="_blank">Devtern</a></p>
+                </div>
+                <div class="form-inner-bottom-container" id="myForm">
+                    <div class="input-container">
+                        <label for="userName" class="label-name">Username:</label> 
+                        <input type="text" id="userName" class="input-ele">
+                        <p id="userError" class="error-message"></p>
+                    </div>
+                    <div class="input-container">
+                        <label for="password" class="label-name">Password:</label>
+                        <input type="password" id="password" class="input-ele">
+                        <p id="passwordError" class="error-message"></p>
+                    </div>
+                    <div class="form-bottom-container">
+                        <div class="con-1">
+                            <input type="checkbox" id="keepLogin">
+                            <label for="keepLogin" class="keepLoginTxt">I Keep me logged in</label>
+                        </div>
+                        <div class="con-2">
+                            <p class="forgot-pass">Forgot Password?</p>
+                        </div>
+                    </div>
+                    <button id="Login" class="button">Login</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="myPopup" class="popup">
+            <div class="popup-content">
+                <h1 class="verified-heading">Verified</h1>
+                <img src="./Images/Verified-bro.png" class="verified-image" />
+                <button class="button" id="closePopup">
+                    Close
+                </button>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
